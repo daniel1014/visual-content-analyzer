@@ -49,3 +49,59 @@ An AI-powered platform for automatic image tagging and content description using
 - Git
 
 ### Local Setup
+
+Follow these steps to run the Visual Content Analyzer locally on your machine:
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/visual-content-analyzer.git
+   cd visual-content-analyzer
+   ```
+
+2. **Backend Setup**
+   - Navigate to the backend directory:
+     ```bash
+     cd backend
+     ```
+   - (Recommended) Create and activate a Python virtual environment:
+     ```bash
+     python3.11.13 -m venv venv_linux
+     source venv/bin/activate  # On Windows: venv\Scripts\activate
+     ```
+   - Install dependencies:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Start the FastAPI server:
+     ```bash
+     uvicorn main:app --reload
+     ```
+
+3. **Frontend Setup**
+   - Open a new terminal and navigate to the frontend directory:
+     ```bash
+     cd ../frontend
+     ```
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the React development server:
+     ```bash
+     npm dev start
+     ```
+   - The frontend will typically be available at [http://localhost:3000](http://localhost:3000).
+
+4. **Usage**
+   - Open your browser and go to [http://localhost:3000](http://localhost:3000).
+   - Drag and drop images into the interface to analyze them.
+   - View generated tags and confidence scores in real time.
+
+5. **Environment Variables**
+   - You can configure backend and frontend settings using `.env` files. See `.env.example` in each directory for available options.
+
+6. **Troubleshooting**
+   - If you encounter issues, ensure all dependencies are installed and the backend server is running before starting the frontend.
+   - For GPU acceleration, ensure your environment supports CUDA and PyTorch is installed with GPU support.
+
+For more advanced configuration, scaling, or deployment instructions, see the sections below.
