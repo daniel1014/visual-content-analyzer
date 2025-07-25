@@ -1,0 +1,80 @@
+# Visual Content Analyzer Backend Dependencies
+# Production dependencies for FastAPI + BLIP model integration
+
+# FastAPI Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Pydantic and Settings
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Machine Learning & Image Processing
+transformers==4.35.2
+torch==2.6.0
+torchvision==0.21.0
+Pillow==10.1.0
+
+# Async and Utilities
+python-dotenv==1.0.0
+
+# File Validation and Security
+python-magic==0.4.27
+python-magic-bin==0.4.14; sys_platform == "win32"
+
+# CORS and Security
+python-jose[cryptography]==3.3.0
+
+# Development Dependencies (optional)
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# pytest-cov==4.1.0
+# httpx==0.25.2
+# pytest-mock==3.12.0
+
+# Production Server (alternative to uvicorn)
+# gunicorn==21.2.0
+
+# Monitoring and Logging (optional)
+# structlog==23.2.0
+# sentry-sdk[fastapi]==1.38.0
+
+# HTTP Client for Health Checks
+httpx==0.25.2
+
+# Data Validation Utilities
+email-validator==2.1.0
+
+# JSON Web Tokens (if authentication needed)
+# python-jose[cryptography]==3.3.0
+# passlib[bcrypt]==1.7.4
+
+# Database (if persistence needed)
+# sqlalchemy==2.0.23
+# alembic==1.12.1
+# psycopg2-binary==2.9.9  # PostgreSQL
+# asyncpg==0.29.0         # Async PostgreSQL
+
+# Redis (if caching needed)
+# redis==5.0.1
+# aioredis==2.0.1
+
+# File Storage (if cloud storage needed)
+# boto3==1.34.0           # AWS S3
+# azure-storage-blob==12.19.0  # Azure Blob
+# google-cloud-storage==2.10.0 # Google Cloud Storage
+
+# Memory Optimization
+memory-profiler==0.61.0
+
+# Configuration Validation
+pydantic[email]==2.5.0
+
+
+# Development Tools (commented out for production)
+# black==23.11.0
+# flake8==6.1.0
+# mypy==1.7.1
+# isort==5.12.0
+# pre-commit==3.6.0
